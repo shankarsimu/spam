@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Single Page Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #7e0aec;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    button {
+      background: #b150f2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i>Welcome to My Website</i></h1>
+    <p><b>simple single-page site with HTML, CSS, and JS</b></p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>This is the home section of the page.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This section tells you about the website. It’s built with basic web technologies.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <strong>example@email.com</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; ❤️2026 My Single Page Website</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "Hello! Thanks for clicking the button.";
+    }
+  </script>
+</body>
+</html>
